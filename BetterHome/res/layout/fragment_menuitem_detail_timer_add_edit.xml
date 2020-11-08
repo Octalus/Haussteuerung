@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_tim_layout"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="fill_parent" >
+	
+    
+    
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/text_tim_name" />
+
+
+            <EditText
+                android:id="@+id/text_tim_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="19"
+                android:singleLine="true" 
+                android:inputType="text"/>
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/inactive"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/text_inactive_button" />
+            
+            <Switch
+                android:id="@+id/text_inactive_button"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="false"
+                android:textOff="@string/aus"
+                android:textOn="@string/an" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:paddingTop="20dp"
+            android:gravity="left" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <CheckBox
+                    android:id="@+id/cb_tin_mo"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mo" />
+
+                <CheckBox
+                    android:id="@+id/cb_tim_di"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/tu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/cb_tim_mi"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_tim_do"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/th" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="fill" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <CheckBox
+                    android:id="@+id/cb_tim_fr"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fr" />
+
+                <CheckBox
+                    android:id="@+id/cb_tim_sa"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/cb_tim_so"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/so" />
+            </LinearLayout>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/textViewSunrisesettime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinner_tim_sun_rise_time"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:labelFor="@+id/text_time_tim" />
+
+
+            <EditText
+                android:id="@+id/text_time_tim"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="19"
+                android:inputType="text"
+                android:singleLine="true">
+            </EditText>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/actuator"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinner_tim_act"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/function"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinner_tim_func"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp" >
+
+            <Button
+                android:id="@+id/button_tim"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ok" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+            
+            <Button
+                android:id="@+id/button_tim_delete"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/entfernen" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

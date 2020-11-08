@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/fullscreen" android:title="@string/fullscreen" android:icon="@drawable/ic_action_full_screen" android:showAsAction="always|withText"/>
+	<item android:id="@+id/graphs" android:title="@string/dashboard" android:icon="@drawable/dash_logo" android:showAsAction="always|withText"/>
+	<item android:id="@+id/plan" android:title="@string/plan" android:icon="@drawable/rooms" android:showAsAction="always|withText"/>
+	<!-- item android:id="@+id/statreset" android:title="@string/resetStats" android:icon="@drawable/abc_switch_thumb_material" android:showAsAction="ifRoom|withText"/-->
+</menu>

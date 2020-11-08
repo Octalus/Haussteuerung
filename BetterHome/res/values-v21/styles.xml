@@ -1,0 +1,49 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Material.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+    <color name="white_opaque">#FFFFFFFF</color>
+	<color name="pitch_black">#FF000000</color>
+	<color name="yellow">#EDDC21</color>
+	
+	<color name="dark_blue">#557B92</color>
+	<color name="infoscout_blue_bar">#0193C1</color>
+	<color name="infoscout_blue">#01A7D9</color>
+	<color name="infoscout_gray">#9F9C9D</color>
+	
+	<color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+	
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+      	<item name="android:windowBackground">@color/white_opaque</item> 
+      	<item name="android:colorBackground">@color/white_opaque</item>
+      	<item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+      	<!-- item name="android:homeAsUpIndicator">@drawable/backarrow</item-->
+    </style>
+        
+    <!-- ActionBar styles -->
+  <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Material.ActionBar.Solid">
+       <!--item name="android:background">@drawable/actionbargradient</item-->
+       <item name="android:background">@color/infoscout_blue_bar</item>
+       <item name="android:titleTextStyle" parent="@android:style/Widget.Material.ActionBar">@style/MyActionBar.TitleTextStyle</item>
+       <item name="android:windowContentOverlay">@null</item>       
+  </style>
+  
+  <style name="MyActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+    <item name="android:textColor">@color/white_opaque</item>
+  </style>
+
+</resources>

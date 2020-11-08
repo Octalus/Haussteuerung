@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp" >
+
+    <TextView
+        android:id="@+id/grouping"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/infoscout_blue_bar"
+        android:textColor="@color/white_opaque" />
+    
+    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	    
+        <!-- SENSOR -->
+    
+		<RelativeLayout
+		    android:id="@+id/facet_sensor"
+		    android:layout_width="fill_parent"
+		    android:layout_height="100dp" >
+		
+		    <TextView
+		        android:id="@+id/text1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_toRightOf="@+id/iconsens"
+		        android:gravity="center_vertical"
+		        android:minHeight="?android:attr/listPreferredItemHeight"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="35dip" />
+		
+		    <ImageView
+		        android:id="@+id/iconsens"
+		        android:layout_width="120dp"
+		        android:layout_height="120dp"
+		        android:layout_alignParentLeft="true"
+		        android:contentDescription="@string/icon"
+		        android:paddingLeft="6dip"
+		        android:paddingTop="5dip"
+		        android:paddingRight="6dip" />
+		
+		    <TextView
+		        android:id="@+id/datum"
+		        android:layout_width="120dp"
+		        android:layout_height="25dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:gravity="center_vertical"
+		        android:minHeight="?android:attr/listPreferredItemHeight"
+		        android:paddingLeft="6dip"
+		        android:textSize="12sp" />
+		
+		    <TextView
+		        android:id="@+id/status"
+		        android:layout_width="120dp"
+		        android:layout_height="20dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/datum"
+		        android:gravity="center_vertical"
+		        android:minHeight="?android:attr/listPreferredItemHeight"
+		        android:paddingLeft="6dip"
+		        android:textSize="12sp" />
+		
+		    <TextView
+		        android:id="@+id/wert"
+		        android:layout_width="140dp"
+		        android:layout_height="50dp"
+		        android:layout_centerVertical="true"
+		        android:layout_toLeftOf="@+id/status"
+		        android:gravity="center_vertical"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		</RelativeLayout>
+		
+		<!-- ACTUATOR -->
+		
+		<RelativeLayout
+		    android:id="@+id/facet_actuator"
+		    android:layout_width="fill_parent"
+		    android:layout_height="100dp"
+		    android:descendantFocusability="blocksDescendants" >
+	
+	    <ImageView
+	        android:id="@+id/iconact"
+	        android:layout_width="120dp"
+	        android:layout_height="120dp"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@string/icon"
+	        android:paddingLeft="6dip"
+	        android:paddingTop="5dip"
+	        android:paddingRight="6dip" />
+	    
+	    <TextView
+	        android:id="@+id/text"
+	        android:layout_width="250dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/iconact"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:minHeight="?android:attr/listPreferredItemHeight"
+	        android:paddingLeft="5dip"
+	        android:paddingTop="35dip"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:paddingTop="35dip"
+	        android:paddingRight="20dip"
+	        android:gravity="right|center_vertical"
+	        android:minHeight="?android:attr/listPreferredItemHeight"
+	        android:orientation="horizontal" >
+	
+	        <LinearLayout
+	            android:id="@+id/newValLayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:gravity="right"
+	            android:orientation="vertical" >
+	        
+		        <TextView
+	                android:id="@+id/newValueText"
+	                android:layout_width="150dp"
+	                android:layout_height="wrap_content" />
+		        
+		        <Spinner
+		            android:id="@+id/spinner1"
+		            android:layout_width="150dp"
+		            android:layout_height="40dp"
+		            android:focusable="false"
+		  			android:focusableInTouchMode="false" />
+		    </LinearLayout>
+	
+	        <Switch
+	            android:id="@+id/switch1"
+	            android:layout_width="300dp"
+	            android:layout_height="wrap_content"
+	            android:textOff="@string/aus"
+	            android:textOn="@string/an"
+	            android:focusable="false"
+		  		android:focusableInTouchMode="false" />
+	        
+	        <Button
+		            android:id="@+id/button1"
+		            android:layout_width="300dp"
+		            android:layout_height="wrap_content"
+		            android:text="@string/activate"
+		            android:focusable="false"
+		  			android:focusableInTouchMode="false" />
+	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/seekBarText"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="6dip" />
+	
+	            <SeekBar
+	                android:id="@+id/seekBar1"
+	                android:layout_width="300dp"
+	                android:layout_height="wrap_content"
+	                android:focusable="false"
+		  			android:focusableInTouchMode="false" />
+	        </LinearLayout>
+	        
+	        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="end"
+		            android:orientation="horizontal" > 
+		        
+			        <ImageButton
+			            android:id="@+id/shutterUp"
+			            android:layout_width="60dp"
+			            android:layout_height="40dp"
+			            android:focusable="false"
+			            android:background="@color/white"
+			  			android:focusableInTouchMode="false" />
+			        
+			        <ImageButton
+			            android:id="@+id/shutterDown"
+			            android:layout_width="60dp"
+			            android:layout_height="40dp"
+			            android:background="@color/white"
+			            android:focusable="false"
+			  			android:focusableInTouchMode="false" />
+			    </LinearLayout>
+	    </LinearLayout>
+	
+	</RelativeLayout>
+	
+		<!-- ACTUATOR with FUNCTIONS -->
+		
+		<RelativeLayout
+		    android:id="@+id/facet_actuator_functions"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:visibility="visible"
+		    android:descendantFocusability="blocksDescendants" >
+		
+		    <ImageView
+	        android:id="@+id/iconact_functions"
+	        android:layout_width="120dp"
+	        android:layout_height="120dp"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@string/icon"
+	        android:paddingLeft="6dip"
+	        android:paddingTop="5dip"
+	        android:paddingRight="6dip" />
+		    
+		    <TextView
+		        android:id="@+id/text_functions"
+		        android:layout_width="250dp"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="30dp"
+		        android:layout_toRightOf="@+id/iconact_functions"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical"
+		        android:minHeight="?android:attr/listPreferredItemHeight"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="35dip"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TableLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="65dp"
+		        android:layout_marginLeft="150dp"
+		    	android:rowCount="1"
+		    	android:columnCount="4"    
+		        android:layout_alignBottom="@+id/iconact_functions"
+		        android:layout_toRightOf="@+id/iconact_functions"
+		        android:layout_toEndOf="@+id/iconact_functions"
+		        android:minHeight="?android:attr/listPreferredItemHeight"
+		        android:orientation="horizontal" >
+		        
+		        <TableRow 
+		            android:layout_width="wrap_content"
+				    android:layout_height="fill_parent"
+				    android:gravity="center">
+						        
+		    		<Button
+			            android:id="@+id/functionButton1"
+			            android:layout_width="160dp"
+			            android:layout_height="fill_parent"
+			            style="?android:attr/buttonBarButtonStyle" />
+			        
+			        <Button
+			            android:id="@+id/functionButton2"
+			            android:layout_width="160dp"
+			            android:layout_height="fill_parent"
+			            style="?android:attr/buttonBarButtonStyle" />        
+		            
+					<Button
+			            android:id="@+id/functionButton3"
+			            android:layout_width="160dp"
+			            android:layout_height="fill_parent"
+			            style="?android:attr/buttonBarButtonStyle" />  
+			            
+					<Button
+			            android:id="@+id/functionButton4"
+			            android:layout_width="160dp"
+			            android:layout_height="fill_parent"
+			            style="?android:attr/buttonBarButtonStyle" />  
+		        
+		        </TableRow>
+					
+		    </TableLayout>
+		
+		</RelativeLayout>
+	
+	<!-- CAMERA -->
+		
+		<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:id="@+id/facet_camera"
+	    android:background="?android:attr/activatedBackgroundIndicator">
+	
+	    <ImageView
+			        android:id="@+id/iconcam"
+			        android:src="@drawable/cameras"
+			        android:layout_width="60dp"
+			        android:layout_height="60dp"
+			        android:contentDescription="@string/icon"
+			        android:paddingLeft="6dip"
+			        android:paddingRight="15dip" />
+	    
+	    <TextView
+	        android:id="@+id/textCam"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/iconcam"
+	        android:minHeight="?android:attr/listPreferredItemHeight"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	</RelativeLayout>	
+		
+	</LinearLayout>
+</LinearLayout>

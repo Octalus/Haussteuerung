@@ -1,0 +1,19 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <PreferenceCategory android:title="@string/pref_global_configurations">
+        <EditTextPreference  
+            android:key="prefRefreshSeconds" 
+            android:summary="@string/pref_refresh_seconds" 
+            android:title="@string/pref_refresh_seconds_detail"
+            android:defaultValue="300"
+            android:persistent="true"/>
+        
+        <CheckBoxPreference android:key="prefOutlierElemination" 
+            android:summary="@string/pref_outlier_detection" 
+            android:title="@string/pref_outlier_detection_detail"
+            android:defaultValue="false"
+            android:persistent="true"/>
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_options">
+        <item>Login</item>
+        <item>Information</item>
+        <item>Alarm</item>
+        <item>Konfiguration</item>
+        <item>Import/Export</item>
+        <item>Unterstützung</item>
+    </string-array>
+</resources>

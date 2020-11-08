@@ -1,0 +1,78 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <PreferenceCategory android:title="@string/pref_alert_enable">
+        <CheckBoxPreference  
+            android:key="prefEnableAlert" 
+            android:summary="@string/pref_alert_enable_summary" 
+            android:title="@string/pref_alert_enable_summary"
+            android:defaultValue="false"
+            android:persistent="true"/>
+        <CheckBoxPreference 
+            android:key="prefAlarmEnableVibration" 
+            android:summary="@string/pref_alert_enable_vibration" 
+            android:title="@string/pref_alert_enable_vibration"
+            android:defaultValue="true"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+       	 <CheckBoxPreference 
+            android:key="prefAlarmEnableRingtone"
+            android:summary="@string/pref_alert_enable_ringtone" 
+            android:title="@string/pref_alert_enable_ringtone"
+            android:defaultValue="true"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+        <RingtonePreference
+            android:key="prefAlarmRingtone"
+            android:title="@string/ringtone_title"
+            android:dependency="prefAlarmEnableRingtone"
+            android:ringtoneType="alarm"
+            android:persistent="true"/>
+    </PreferenceCategory>
+     
+    <PreferenceCategory android:title="@string/pref_alert_details">
+        <CheckBoxPreference 
+            android:key="prefSmokeAlert" 
+            android:summary="@string/pref_alert_smoke_details_summary" 
+            android:title="@string/pref_alert_smoke_details_summary"
+            android:defaultValue="true"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+        <CheckBoxPreference 
+            android:key="prefHeatAlert" 
+            android:summary="@string/pref_alert_heat_details_summary" 
+            android:title="@string/pref_alert_heat_details_summary"
+            android:defaultValue="true"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+        <CheckBoxPreference 
+            android:key="prefWaterAlert" 
+            android:summary="@string/pref_alert_water_details_summary" 
+            android:title="@string/pref_alert_water_details_summary"
+            android:defaultValue="true"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+        <CheckBoxPreference 
+            android:key="prefWindowBreakAlert" 
+            android:summary="@string/pref_alert_windowbreak_details_summary" 
+            android:title="@string/pref_alert_windowbreak_details_summary"
+            android:defaultValue="true"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+        <CheckBoxPreference 
+            android:key="prefFenceAlert" 
+            android:summary="@string/pref_alert_fence_details_summary" 
+            android:title="@string/pref_alert_fence_details_summary"
+            android:defaultValue="true"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+        <CheckBoxPreference 
+            android:key="prefMotionAlert" 
+            android:summary="@string/pref_alert_motion_details_summary" 
+            android:title="@string/pref_alert_motion_details_summary"
+            android:defaultValue="false"
+            android:dependency="prefEnableAlert"
+            android:persistent="true"/>
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tab_scroll"
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/abo_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+            <!-- TextView
+                android:id="@+id/abo_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" 
+                android:gravity="bottom"/-->
+            
+            
+</ScrollView>

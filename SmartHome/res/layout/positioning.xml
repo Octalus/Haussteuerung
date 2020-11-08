@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        <Button
+            android:id="@+id/pos_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aktuelle Position laden!" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        <TextView
+            android:id="@+id/pos_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+        <WebView
+            android:id="@+id/html"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_weight=".90"
+            android:visibility="gone" >
+
+        </WebView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioleave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="beim verlassen" />
+
+            <RadioButton
+                android:id="@+id/radioentry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="beim betreten" />
+        </RadioGroup>
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1111"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text=" " />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="folgendes Makro ausführen:" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        <Spinner
+            android:id="@+id/pos_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+        <Button
+            android:id="@+id/pos_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="setzen..." />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/spacer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text=" " />
+
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktive Proximity-Alerts:" />
+
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+        <Spinner
+            android:id="@+id/alerts_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </Spinner>
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+        <Button
+            android:id="@+id/pos_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="löschen..." />
+
+        </TableRow>
+
+        
+
+    </TableLayout>
+    
+    </ScrollView>
